@@ -1,7 +1,7 @@
 {
-  "name": "vue-svg-icon",
+  "name": "vue-svg-custom-icon",
   "version": "1.0.0",
-  "description": "Use custom SVG icon easily in your Vue.js (2.x) application",
+  "description": "Use SVG custom icon easily in your Vue.js (2.x) application",
   "main": "src/plugins/VueSVGIcon.js",
   "scripts": {
     "postinstall": "npm run icons:generate",
