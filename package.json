@@ -4,7 +4,6 @@
   "description": "Use SVG custom icon easily in your Vue.js (2.x) application",
   "main": "src/plugins/VueSVGIcon.js",
   "scripts": {
-    "postinstall": "npm run icons:generate",
     "icons:generate": "npm run icons:optimize && npm run icons:sprite",
     "icons:optimize": "svgo -f ./src/icons --quiet",
     "icons:sprite": "svg-sprite --symbol --inline --ss=\"icons.svg\" --symbol-dest=\"\" --dest=static src/icons/*.svg",
@@ -27,10 +26,8 @@
     "url": "https://github.com/achwilko/vue-svg-icon/issues"
   },
   "homepage": "https://github.com/achwilko/vue-svg-icon#readme",
-  "dependencies": {
-    "vue": "^2.2.6"
-  },
   "devDependencies": {
+    "vue": "^2.2.6",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
