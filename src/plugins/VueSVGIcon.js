@@ -1,14 +1,15 @@
-import SVGIcon from '../components/SVGIcon'
+import SVGIcon from './../components/SVGIcon'
 
 export default {
-  install(Vue, options = {}) {
+  install: function (Vue, options) {
 
     // If basePath is defined then updated default prop value
-    if (options.basePath) {
-      SVGIcon.props.basePath.default = basePath
+    if (options && options.basePath) {
+      SVGIcon.props.basePath.default = options.basePath
     }
 
     // Register component
     Vue.component(SVGIcon.name, SVGIcon)
   }
 }
+
