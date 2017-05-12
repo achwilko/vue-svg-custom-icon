@@ -10,7 +10,9 @@ npm install vue-svg-custom-icon --save
 ## Requirements
  - [Vue.js](https://github.com/vuejs/vue) (2.x+)
  - [svgxuse](https://github.com/Keyamoon/svgxuse) polyfill to support IE9-11 version
- - SVG sprite file ([example](https://github.com/achwilko/vue-svg-icon/blob/master/static/icons.svg?short_path=e2fe5f7)) that should be available in /static folder by default (can be changed, more details in configuration section)
+ - SVG sprite file that should be available in **"/static"** folder by default (can be changed, more details in configuration section)
+
+ > TIP: you can use [create-svg-sprite](https://github.com/achwilko/create-svg-sprite) package to create SVG sprite with no build configuration based on SVG files from given folder.
 
 
 ## Usage
@@ -45,7 +47,7 @@ In your components:
 
 
 ## Configuration
-By default, SVGIcon component will look for SVG sprite in */static* folder. Use "basePath" options to change the default path:
+By default, &lt;svg-icon> component will look for SVG sprite in **"/static"** folder. Provide **"basePath"** options to change the default path:
 ```js
 import VueSVGCustomIcon from 'vue-svg-custom-icon'
 Vue.use(VueSVGCustomIcon, { basePath: '/assets' })
