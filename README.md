@@ -25,7 +25,7 @@ In your components:
   <svg-icon name="svg_icon_name" :size="64"></svg-icon>
 ```
 - **name** - SVG sprite symbol id value (note below)
-- **size** - icon size in px (32 is default)
+- **size** - icon size in px (16 is default)
 
 
 > NOTE: Assuming your SVG sprite looks like below:
