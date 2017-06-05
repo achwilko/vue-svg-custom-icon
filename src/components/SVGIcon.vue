@@ -1,7 +1,5 @@
 <template>
-  <svg class="icon" :style="{ 'width': iconSize, 'height': iconSize }">
-    <use :xlink:href="iconLink"></use>
-  </svg>
+  <span class="icon" v-html="svg"></span>
 </template>
 
 <script>
@@ -26,15 +24,8 @@
       /**
        * Computed icon link
        */
-      iconLink() {
-        return `${ this.basePath }/icons.svg#${ this.name }`
-      },
-
-      /**
-       * Computed icon size
-       */
-      iconSize() {
-        return `${ this.size }px`
+      svg() {
+        return `<svg style="width: ${ this.size }px; height: ${ this.size }px"><use xlink:href="${ this.basePath }/icons.svg#${ this.name }"></use></svg>`
       }
     }
   }
