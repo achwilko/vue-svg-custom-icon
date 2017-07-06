@@ -33,6 +33,7 @@
 
 <style scoped>
   .icon {
+    color: inherit;
     display: inline-block;
     vertical-align: middle;
     fill: currentColor;
